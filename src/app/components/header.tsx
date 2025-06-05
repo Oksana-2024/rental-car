@@ -4,7 +4,7 @@ import Container from "./container";
 
 const Header = () => {
   return (
-    <Container className="flex flex-row justify-between py-[26px]">
+    <Container className="flex flex-row justify-between py-6">
       <Image
         src="/Logo.svg"
         alt="Logo company"
