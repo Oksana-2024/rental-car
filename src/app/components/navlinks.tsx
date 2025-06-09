@@ -11,7 +11,7 @@ export default function NavLinks() {
   const isCatalogActive = pathname === "/catalog"; 
 
   return (
-    <nav className="flex flex-row gap-[32px] bg-white font-medium leading-[1.25] items-center justify-end">
+    <nav className="flex flex-row gap-[32px] font-medium leading-[1.25] items-center justify-end">
       <Link href="/" className={clsx(isHomeActive && "active")}>
         Home
       </Link>

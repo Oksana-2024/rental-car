@@ -18,7 +18,7 @@ export default function Home() {
             </p>
             <Link
               href="/catalog"
-              className="bg-[#3470ff] w-[144px] h-[44px] rounded-xl flex items-center justify-center"
+              className="hover:bg-button-hover-500 bg-[#3470ff] w-[144px] h-[44px] rounded-xl flex items-center justify-center"
             >
               View Catalog
             </Link>
