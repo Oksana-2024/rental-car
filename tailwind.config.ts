@@ -11,6 +11,21 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "oslo-grey": {
+          500: "#8d929a",
+        },
+        mirage: {
+          500: "#101828",
+        },
+        porcelain: {
+          500: "#f2f4f7",
+        },
+        button: {
+          500: "#3470ff",
+        },
+        "button-hover": {
+          500: "#0b44cd",
+        },
       },
     },
   },
