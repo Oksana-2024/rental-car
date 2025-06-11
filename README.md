@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rental Car App
 
-## Getting Started
+## Description
 
-First, run the development server:
+Experience a sleek, intuitive car-rental application designed to make your journey effortless. Browse our economy, business, and luxury fleets with high-resolution galleries, save your favorite rides to a personalized Wishlist, and book any vehicle in just a few clicks—with transparent pricing and instant confirmation. Real-time availability, flexible pickup and delivery options, and an elegant interface ensure a seamless rental experience from start to finish.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Visually appealing UI with intuitive UX design
+* Comprehensive car catalog
+* Detailed vehicle pages with specifications and images
+* Personalized Wishlist for saving favorite cars
+* Quick and secure booking flow
+* Desktop-optimized layout
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Frontend:** Next.js, React, TypeScript, CSS, HTML
+* **API Client:** Axios
+* **API Docs**: [Rental Car API](https://car-rental-api.goit.global/api-docs/)
 
-## Learn More
+## Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+* Node.js (>= 22.x)
+* npm (>= 10.x)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/Oksana-2024/rental-car.git
+   cd rental-car
+   ```
+2. Install dependencies and start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   npm run dev
+   ```
+3. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Production
+
+1. Install dependencies and build for production:
+
+   ```bash
+   npm install
+   npm run build
+   ```
+2. Preview the production build:
+
+   ```bash
+   npm run preview
+   ```
+3. Open [http://localhost:4173](http://localhost:4173) in your browser.
+
+## Developer
+
+developed by Oksana S. - Frontend Developer
+
+---
