@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/lib/classNameMerge";
 
 interface IContainer {
   children: React.ReactNode;
@@ -7,9 +7,7 @@ interface IContainer {
 
 const Container = ({ children, className }: IContainer) => {
   return (
-    <div
-      className={clsx("max-w-[1440px] mx-auto px-[120px]", className)}
-    >
+    <div className={cn("max-w-[1440px] mx-auto px-[120px]", className)}>
       {children}
     </div>
   );

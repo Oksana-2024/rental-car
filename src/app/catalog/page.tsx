@@ -101,8 +101,8 @@ const CatalogPage = () => {
   };
 
   return (
-    <section className="pt-[84px]">
-      <Container>
+    <section className="pt-[84px] pb-[124px]">
+      <Container className="flex flex-col items-center">
         <SearchForm onSubmit={onSubmit} />
         {error && <p className="text-red-500 mb-4">Error: {error}</p>}
 
@@ -114,7 +114,7 @@ const CatalogPage = () => {
           <>
             {totalPages > page && (
               <Button
-                className="border-solid border rounded-xl border-button-500"
+                className="justify-center flex w-[156px] h-[44] items-center border-solid border rounded-xl border-button-500 mt-20 hover:border-button-hover-500"
                 text="Load more"
                 type="button"
                 onClick={handleClick}

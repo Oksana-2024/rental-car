@@ -4,16 +4,18 @@ import Container from "./container";
 
 const Header = () => {
   return (
-    <Container className="flex flex-row justify-between py-6">
-      <Image
-        src="/Logo.svg"
-        alt="Logo company"
-        width={104}
-        height={16}
-        priority
-      />
-      <NavLinks />
-    </Container>
+    <header className="bg-porcelain-500">
+      <Container className="flex flex-row justify-between py-6">
+        <Image
+          src="/Logo.svg"
+          alt="Logo company"
+          width={104}
+          height={20}
+          priority
+        />
+        <NavLinks />
+      </Container>
+    </header>
   );
 };
 
