@@ -15,7 +15,7 @@ Experience a sleek, intuitive car-rental application designed to make your journ
 
 ## Tech Stack
 
-* **Frontend:** Next.js, React, TypeScript, CSS, HTML
+* **Frontend:** Next.js, React, TypeScript, Tailwind, CSS, HTML
 * **API Client:** Axios
 * **API Docs**: [Rental Car API](https://car-rental-api.goit.global/api-docs/)
 
