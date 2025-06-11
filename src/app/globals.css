@@ -1,3 +1,4 @@
+@import url("../app/components/date-picker.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,8 +24,14 @@
 
 body {
   font-family: var(--font-manrope);
+  color: var(--main);
 }
 
-.active{
-  color:var(--button-hover);
+.active {
+  color: var(--button-hover);
+}
+
+input,
+textarea {
+  outline: none;
 }

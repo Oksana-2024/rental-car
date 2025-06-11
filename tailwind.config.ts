@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        'custom': '1.33',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -26,6 +29,9 @@ export default {
         "button-hover": {
           500: "#0b44cd",
         },
+        inputs: "var(--inputs)",
+        main: "var(--main)",
+        "gray-light": "var(--gray-light)",
       },
     },
   },
