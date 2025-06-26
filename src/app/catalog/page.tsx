@@ -16,48 +16,7 @@ const CatalogPage = () => {
   const [totalPages, setTotalPages] = useState(0);
   const [query, setQuery] = useState<ISearchQuery>({} as ISearchQuery);
 
-  // async function fetchCars(search: ISearchQuery = {} as ISearchQuery) {
-  //   try {
-  //     setIsLoading(true);
-  //     setError("");
-
-  //     const params = new URLSearchParams();
-  //     Object.entries(search).forEach(([key, value]) => {
-  //       if (value !== undefined && value !== null && value !== "") {
-  //         params.append(key, String(value));
-  //       }
-  //     });
-
-  //     const { data } = await BASE_API.get("/cars", {
-  //       params,
-  //     });
-
-  //     if (search.page && search.page > 1) {
-  //       setCars((prev) => [...prev, ...data.cars]);
-  //     } else {
-  //       setCars(data.cars);
-  //     }
-
-  //     setPage(Number(data.page));
-  //     setTotalPages(data.totalPages);
-  //   } catch (error) {
-  //     setError((error as Error).message);
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-  // }
-
-  // const onSubmit = (search: ISearchQuery) => {
-  //   setPage(1);
-  //   setQuery(search);
-  //   fetchCars({ ...search, page: 1 });
-  // };
-
-  // const handleClick = () => {
-  //   const nextPage = page + 1;
-  //   setPage(nextPage);
-  // };
-
+  
   useEffect(() => {
     const fetchCars = async () => {
       try {
