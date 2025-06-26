@@ -1,4 +1,4 @@
-"use client";
+
 import Image from "next/image";
 import { ICarCard } from "@/types/car";
 import { use, useEffect, useState } from "react";
