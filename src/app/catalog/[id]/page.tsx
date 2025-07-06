@@ -1,10 +1,7 @@
 import CarById from "./car-details-by-id";
 
-interface IPageProps {
-  params: { id: string };
-}
 
-const CarByIdPage = ({ params }: IPageProps) => {
+const CarByIdPage = ({ params }: { params: { id: string } }) => {
   return <CarById id={params.id} />;
 };
 export default CarByIdPage;

@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { ToastContainer } from "react-toastify";
 
-interface CarByIdProps {
+export interface CarByIdProps {
   id: string;
 }
 const CarById = ({ id }: CarByIdProps) => {
