@@ -1,12 +1,10 @@
-import { use } from "react";
 import CarById from "./car-details-by-id";
 
 interface IPageProps {
-  params: Promise<{ id: string }>;
+  params: { id: string };
 }
 
 const CarByIdPage = ({ params }: IPageProps) => {
-  const id = use(params).id;
-  return <CarById id={id} />;
+  return <CarById id={params.id} />;
 };
 export default CarByIdPage;
