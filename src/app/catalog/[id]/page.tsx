@@ -1,7 +1,7 @@
-
+"use client";
 import Image from "next/image";
 import { ICarCard } from "@/types/car";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BASE_API } from "../../../../service/baseAPI";
 import Container from "@/app/components/container";
 import FeedbackForm from "@/app/components/feedback-form";
@@ -15,16 +15,13 @@ import {
   Settings,
 } from "lucide-react";
 import { ToastContainer } from "react-toastify";
+import { useParams } from "next/navigation";
 
-interface ICarByIdPage {
-  params: Promise<{ id: string }>;
-}
-
-const CarByIdPage = ({ params }: ICarByIdPage) => {
+const CarByIdPage = () => {
   const [car, setCar] = useState<ICarCard>();
   const [isLoading, setIsLoading] = useState(true);
-  const id = use(params);
-  const cardId = id.id;
+  const params = useParams();
+  const carId = params.id as string;
   const addressItems = car?.address?.split(", ").slice(-2);
 
   async function fetchCarById(id: string) {
@@ -44,8 +41,8 @@ const CarByIdPage = ({ params }: ICarByIdPage) => {
   }
 
   useEffect(() => {
-    if (cardId) fetchCarById(cardId);
-  }, [cardId]);
+    if (carId) fetchCarById(carId);
+  }, [carId]);
 
   if (isLoading) return <p>Loading, please wait...</p>;
   if (!car) return <p>Car not found.</p>;
